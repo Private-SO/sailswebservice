@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Sails App</title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <%/* If you want to discourage search engines from indexing this site,
+    uncomment the following line: */%> <%/*
+    <meta name="robots" content="noindex" />
+    */%>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+  </head>
+
+  <style>
+    a {
+      margin: 15px;
+    }
+  </style>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mx-auto">
+          <div class="btn-toolbar">
+            <a
+              class="btn btn-outline-success my-2 my-sm-0"
+              href="/viewData"
+              role="button"
+            >
+              <i class="fa fa-eye"></i> View
+            </a>
+
+            <a
+              class="btn btn-outline-info my-2 my-sm-0"
+              href="/addData"
+              role="button"
+            >
+              <i class="fa fa-plus"></i> Add
+            </a>
+
+            <a
+              class="btn btn-outline-primary my-2 my-sm-0"
+              href="/updateData"
+              role="button"
+            >
+              <i class="fa fa-pencil-square-o"></i> Update
+            </a>
+
+            <a
+              class="btn btn-outline-danger my-2 my-sm-0"
+              href="/deleteData"
+              role="button"
+            >
+              <i class="fa fa-trash"></i> Delete
+            </a>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      class="container"
+      style="align-items: center; text-align: center; padding: 50px;"
+    >
+      <%- body %>
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="/dependencies/sails.io.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>
